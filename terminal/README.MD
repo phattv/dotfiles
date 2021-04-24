@@ -8,3 +8,8 @@
 
 # Windows
 - https://docs.microsoft.com/en-us/windows/wsl/install-win10
+- In order to use the same ssh key as Windows', DO NOT symlink `ln` (you cant change Windows file system in Linux), but copy then `chmod
+```
+cp /mnt/c/Users/helloworld/.ssh ~/.ssh
+chmod xxx ~/.ssh
+```

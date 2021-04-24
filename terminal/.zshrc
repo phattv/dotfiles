@@ -2,7 +2,7 @@ export ZSH="/Users/phat.tranvan/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
-plugins=(z zsh-autosuggestions git)
+plugins=(zsh-z zsh-autosuggestions git)
 
 source $ZSH/oh-my-zsh.shif [ -e "/usr/local/opt/openssl" ]; then
     export PATH="/usr/local/opt/openssl/bin:$PATH"
