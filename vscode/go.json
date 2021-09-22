@@ -1,0 +1,23 @@
+{
+  "todo": {
+		"prefix": "todo",
+		"body": [
+			"// TODO phattv $1\n$0"
+		],
+		"description": "TODO comment"
+  },
+  "log": {
+    "prefix": "log",
+    "body": [
+      "fmt.Println(\"phattv $1\", $1)\n$0"
+    ],
+    "description": "debug log"
+  },
+  "dump": {
+    "prefix": "dump",
+    "body": [
+      "bytes, _ := json.MarshalIndent(${1:struct}, \"\\t\", \"\\t\");fmt.Printf(\"phattv %s\", string(bytes))\n$0"
+    ],
+    "description": "dump struct"
+  }
+}
