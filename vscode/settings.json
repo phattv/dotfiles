@@ -102,5 +102,7 @@
   "files.associations": {
     "*.in": "yaml",
     "*.rules": "yaml"
-  }
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.showExitAlert": false
 } 
