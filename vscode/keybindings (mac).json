@@ -22,6 +22,10 @@
   },
   // search and replace
   {
+    "key": "cmd+r",
+    "command": "editor.action.startFindReplaceAction"
+  },
+  {
     "key": "shift+cmd+r",
     "command": "workbench.action.replaceInFiles"
   },
@@ -47,9 +51,20 @@
   },
   // cursor
   {
-    "key": "cmd+l",
-    "command": "workbench.action.gotoLine"
+    "key": "alt+up",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
   },
+  {
+    "key": "alt+down",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+d",
+    "command": "editor.action.copyLinesDownAction"
+  },
+  // navigation
   {
     "key": "cmd+[",
     "command": "workbench.action.navigateBack"
@@ -58,6 +73,11 @@
     "key": "cmd+]",
     "command": "workbench.action.navigateForward"
   },
+  {
+    "key": "cmd+l",
+    "command": "workbench.action.gotoLine"
+  },
+  // editor
   {
     "key": "cmd+-",
     "command": "editor.fold",
@@ -78,24 +98,6 @@
     "command": "editor.unfoldAll",
     "when": "editorTextFocus"
   },
-  {
-    "key": "cmd+d",
-    "command": "editor.action.copyLinesDownAction"
-  },
-  {
-    "key": "cmd+r",
-    "command": "editor.action.startFindReplaceAction"
-  },
-  {
-    "key": "alt+up",
-    "command": "editor.action.insertCursorAbove",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+down",
-    "command": "editor.action.insertCursorBelow",
-    "when": "editorTextFocus"
-  },
   // debugger
   {
     "key": "shift+cmd+d",
@@ -112,4 +114,8 @@
     "command": "workbench.action.debug.restart",
     "when": "inDebugMode"
   },
+  {
+    "key": "cmd+y",
+    "command": "redo"
+  }
 ]
