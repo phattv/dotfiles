@@ -20,6 +20,16 @@
     "key": "cmd+4",
     "command": "workbench.view.debug"
   },
+  {
+    "key": "cmd+enter",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "explorer.openAndPassFocus",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+  },
 
   // search and replace
   {
@@ -143,5 +153,13 @@
   {
     "key": "cmd+y",
     "command": "redo"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
   }
 ]
