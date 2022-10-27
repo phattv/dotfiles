@@ -141,14 +141,14 @@
     "when": "!inDebugMode"
   },
   {
-    "key": "shift+alt+cmd+d",
+    "key": "shift+cmd+d",
     "command": "workbench.action.debug.stop",
     "when": "inDebugMode"
   },
   {
-    "key": "shift+cmd+r",
-    "command": "workbench.action.debug.restart",
-    "when": "inDebugMode"
+    "key": "shift+cmd+c",
+    "command": "workbench.action.debug.continue",
+    "when": "debugState == 'stopped'"
   },
   {
     "key": "cmd+y",
