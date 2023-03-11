@@ -1,11 +1,7 @@
-export ZSH="/Users/phat.tranvan/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
+export PATH="$HOME/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH" # subl
 
 ZSH_THEME="robbyrussell"
-
-plugins=(zsh-z zsh-autosuggestions zsh-syntax-highlighting git)
+plugins=(git z zsh-autosuggestions zsh-syntax-highlighting fzf-zsh-plugin)
 
 source $ZSH/oh-my-zsh.sh
-
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
