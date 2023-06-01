@@ -12,8 +12,15 @@
   "dump": {
     "prefix": "dump",
     "body": [
-      "bytes, _ := json.MarshalIndent(${1:struct}, \"\\t\", \"\\t\");fmt.Printf(\"phattv %s\\n\", string(bytes))\n$0"
+      "b, _ := json.MarshalIndent(${1:struct}, \"\\t\", \"\\t\");fmt.Printf(\"phattv %s\\n\", string(b))\n$0"
     ],
     "description": "dump struct"
+  },
+  "dumphttp": {
+    "prefix": "dumphttp",
+    "body": [
+      "d, _ := httputil.DumpRequest(${1:struct}, true);fmt.Printf(\"phattv %s\\n\", string(d))\n$0"
+    ],
+    "description": "dump http request"
   }
 }

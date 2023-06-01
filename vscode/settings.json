@@ -2,56 +2,46 @@
   "window.zoomLevel": 0,
   "files.autoSave": "onFocusChange",
   "search.exclude": {
-      "**/vendor": true
-  },
-  "gitlens.advanced.messages": {
-      "suppressShowKeyBindingsNotice": true
+      "**/vendor": true,
+      "**/node_modules": true,
   },
   "editor.multiCursorModifier": "ctrlCmd",
   "workbench.editor.enablePreview": false,
-  "sync.gist": "8139eb0a92d2d43b729f00b3169bba4f8f413423",
-  "sync.quietSync": false,
-  "sync.removeExtensions": true,
-  "sync.syncExtensions": true,
-  "sync.autoDownload": false,
-  "sync.autoUpload": false,
-  "sync.forceDownload": false,
   "breadcrumbs.enabled": true,
   "workbench.sideBar.location": "right",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.minimap.enabled": false,
   "cSpell.language": "en,en-US,en-GB",
   "cSpell.enabledLanguageIds": [
-      "asciidoc",
-      "c",
-      "cpp",
-      "csharp",
-      "css",
-      "go",
-      "handlebars",
-      "html",
-      "jade",
-      "javascript",
-      "javascriptreact",
-      "json",
-      "latex",
-      "less",
-      "markdown",
-      "php",
-      "plaintext",
-      "proto3",
-      "pub",
-      "python",
-      "restructuredtext",
-      "rust",
-      "scss",
-      "text",
-      "typescript",
-      "typescriptreact",
-      "yml"
-  ],
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "go",
+    "handlebars",
+    "html",
+    "jade",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "proto3",
+    "pub",
+    "python",
+    "restructuredtext",
+    "rust",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yml"
+],
   "workbench.startupEditor": "newUntitledFile",
-  "color-highlight.markerType": "underline",
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "[go]": {
@@ -63,31 +53,9 @@
     "source.organizeImports": true
   },
   "editor.defaultFormatter": "golang.go",
-  "cSpell.userWords": [
-    "Debugf",
-    "Infof",
-    "Warnf",
-    "godoc",
-    "msisdn",
-    "postgres",
-    "thunes"
-  ],
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[sql]": {
-    "editor.defaultFormatter": "mtxr.sqltools"
-  },
-  "sqltools.format": {
-    "reservedWordCase": "upper"
-  },
-  "editor.formatOnSave": true,
   "workbench.editor.highlightModifiedTabs": true,
   "editor.rulers": [
     120
@@ -96,13 +64,30 @@
   "search.useIgnoreFiles": false,
   "search.followSymlinks": false,
   "go.toolsManagement.autoUpdate": true,
-  "cSpell.enableFiletypes": [
-    "perl"
-  ],
   "files.associations": {
     "*.in": "yaml",
     "*.rules": "yaml"
   },
+  "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.showExitAlert": false
-} 
+  "terminal.integrated.showExitAlert": false,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "git.confirmSync": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emeraldwalk.runonsave": {
+    "match": "\\.go$",
+    "cmd": "~/go/bin/formattag -file ${file}"
+  }
+}
