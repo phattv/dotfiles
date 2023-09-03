@@ -6,21 +6,28 @@
   },
   "log": {
     "prefix": "xxx",
-    "body": ["fmt.Printf(\"\\nphattv %#v\\n\", $1)\n$0"],
+    "body": ["fmt.Printf(\"\\nphattv $1\\n%#v\\n\\n\", $1)$0"],
     "description": "debug log"
   },
   "dump": {
     "prefix": "dump",
     "body": [
-      "b, _ := json.MarshalIndent(${1:struct}, \"\\t\", \"\\t\");fmt.Printf(\"phattv %s\\n\", string(b))\n$0"
+      "b, _ := json.MarshalIndent(${1:struct}, \"\", \"  \");fmt.Printf(\"\\n\\nphattv $1\\n%s\\n\\n\", string(b))$0"
     ],
     "description": "dump struct"
   },
-  "dumphttp": {
-    "prefix": "dumphttp",
+  "dumpreq": {
+    "prefix": "dumpreq",
     "body": [
-      "d, _ := httputil.DumpRequest(${1:struct}, true);fmt.Printf(\"phattv %s\\n\", string(d))\n$0"
+      "d, _ := httputil.DumpRequest(${1:struct}, true);fmt.Printf(\"\\n\\nphattv $1\\n%s\\n\\n\", string(d))$0"
     ],
     "description": "dump http request"
+  },
+  "dumpres": {
+    "prefix": "dumpres",
+    "body": [
+      "d, _ := httputil.DumpResponse(${1:struct}, true);fmt.Printf(\"\\n\\nphattv $1\\n%s\\n\\n\", string(d))\n$0"
+    ],
+    "description": "dump http response"
   }
 }
