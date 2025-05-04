@@ -1,93 +1,16 @@
 {
-  "window.zoomLevel": 0,
-  "files.autoSave": "onFocusChange",
-  "search.exclude": {
-      "**/vendor": true,
-      "**/node_modules": true,
-  },
-  "editor.multiCursorModifier": "ctrlCmd",
-  "workbench.editor.enablePreview": false,
-  "breadcrumbs.enabled": true,
   "workbench.sideBar.location": "right",
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-  "editor.minimap.enabled": false,
-  "cSpell.language": "en,en-US,en-GB",
-  "cSpell.enabledLanguageIds": [
-    "asciidoc",
-    "c",
-    "cpp",
-    "csharp",
-    "css",
-    "go",
-    "handlebars",
-    "html",
-    "jade",
-    "javascript",
-    "javascriptreact",
-    "json",
-    "latex",
-    "less",
-    "markdown",
-    "php",
-    "plaintext",
-    "proto3",
-    "pub",
-    "python",
-    "restructuredtext",
-    "rust",
-    "scss",
-    "text",
-    "typescript",
-    "typescriptreact",
-    "yml"
-],
-  "workbench.startupEditor": "newUntitledFile",
+  "files.autoSave": "onFocusChange",
   "editor.tabSize": 2,
-  "editor.detectIndentation": false,
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  },
-  "go.formatTool": "goimports",
-  "editor.wordWrap": "on",
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
-  },
-  "editor.defaultFormatter": "golang.go",
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "workbench.editor.highlightModifiedTabs": true,
-  "editor.rulers": [
-    120
-  ],
-  "files.insertFinalNewline": false,
-  "search.useIgnoreFiles": false,
-  "search.followSymlinks": false,
-  "go.toolsManagement.autoUpdate": true,
-  "files.associations": {
-    "*.in": "yaml",
-    "*.rules": "yaml"
-  },
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.showExitAlert": false,
   "editor.formatOnSave": true,
-  "editor.inlineSuggest.enabled": true,
-  "git.confirmSync": false,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "emeraldwalk.runonsave": {
-    "match": "\\.go$",
-    "cmd": "~/go/bin/formattag -file ${file}"
+  "editor.rulers": [120],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.minimap.enabled": false,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "/bin/zsh",
+      "args": ["-l"]
+    }
   }
 }
